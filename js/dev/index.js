@@ -4936,15 +4936,15 @@ function initSliders() {
       slidesPerView: 1,
       spaceBetween: 0,
       speed: 1e3,
-      loop: true
-      // autoplay: {
-      // 	delay: 7000,
-      // 	disableOnInteraction: false,
-      // },
-      // effect: 'fade',
-      // fadeEffect: {
-      // 	crossFade: true
-      // },
+      loop: true,
+      autoplay: {
+        delay: 7e3,
+        disableOnInteraction: false
+      },
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true
+      }
     });
   }
 }
