@@ -1323,7 +1323,8 @@ section:not(section.hero), footer {
     left: 100%;
     top: 0;
     overflow: auto;
-    padding: 0rem 0.9375rem 1.875rem 0.9375rem;
+    padding-bottom: 1.875rem;
+    padding-inline: 0.9375rem;
     transition: left 0.6s;
     background-color: rgba(30, 30, 30, 0.9);
   }
