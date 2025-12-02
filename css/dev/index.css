@@ -1359,7 +1359,7 @@ section:not(section.hero), footer {
     opacity: 1;
   }
   .menu__link {
-    font-size: 1.5rem;
+    font-size: 1.875rem;
   }
   .icon-menu {
     display: block;
@@ -1425,6 +1425,9 @@ section:not(section.hero), footer {
   .items-special__item {
     transition: translate 0.4s 0.3s, opacity 0.4s 0.3s;
   }
+  [intro-hide] .items-special__item.--watcher-view {
+    transform: translate3d(0, 0, 0) !important;
+  }
   .specialities__navigation {
     gap: 0.9375rem;
   }
@@ -1486,6 +1489,9 @@ section:not(section.hero), footer {
   }
 }
 @media (max-width: 29.99875em){
+  .menu__link {
+    font-size: 1.625rem;
+  }
   .header__button.button::after {
     display: none;
   }
