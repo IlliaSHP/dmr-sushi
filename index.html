@@ -17,16 +17,18 @@
 		<link rel="preload" href="./assets/fonts/GreatVibes-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 		<link rel="shortcut icon" href="./assets/img/favicon.ico">
 		<title>Home Page</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1764668314148"></script>
-		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1764668314148">
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1764668314148">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1768852481149"></script>
+		<link rel="modulepreload" crossorigin="" href="./js/common.min.js?v=1768852481149">
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1768852481149">
 	</head>
 	<body>
 		<div class="wrapper">
 			<!-- <div class="reveal-mask"></div> -->
 			<header data-fls-header="" data-fls-header-scroll-show="1000" data-fls-header-scroll="" class="header">
 				<div class="header__container">
-					<img src="./assets/img/logo.svg" alt="logo" class="header__logo">
+					<button type="button" data-fls-logo="" data-fls-scrollto=".hero" class="header__logo logo">
+						<img src="./assets/img/logo.svg" alt="logo">
+					</button>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
@@ -52,7 +54,7 @@
 				</div>
 			</header>
 			<main class="page page--index">
-				<section class="page__hero hero">
+				<section data-fls-watcher="navigator" class="page__hero hero">
 					<div class="hero__container">
 						<div data-fls-watcher="" data-fls-watcher-once="" data-fls-watcher-threshold=".2" class="hero__head head-hero">
 							<div class="head-hero__label">Best sushi in town</div>
@@ -628,7 +630,9 @@
 								</div>
 							</address>
 							<button data-fls-button="" class="footer__button button">Reserve a Table</button>
-							<img src="./assets/img/logo.svg" class="footer__logo" alt="logo">
+							<button type="button" data-fls-logo="" data-fls-scrollto=".hero" class="footer__logo logo">
+								<img src="./assets/img/logo.svg" alt="logo">
+							</button>
 							<div class="footer__social">
 								<a href="#" data-fls-link="" class="footer__link link">Instagram</a>
 								<a href="#" data-fls-link="" class="footer__link link">Twitter</a>

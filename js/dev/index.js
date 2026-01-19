@@ -5202,7 +5202,7 @@ function preloader() {
     const preloaderTemplate = `
 		<div class="fls-preloader">
 			<div class="fls-preloader__body">
-				<div class="logo">
+				<div data-logo class="logo">
 					<svg viewBox="0 0 69 45" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<mask id="mask0_427_38" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="69" height="45">
 							<mask id="path-1-inside-1_427_38" fill="white">
@@ -5243,7 +5243,7 @@ function preloader() {
     addLoadedClass();
   }
   function addLoadedClass() {
-    const logo = document.querySelector(".logo");
+    const logo = document.querySelector("[data-logo]");
     if (!logo) return;
     logo.addEventListener("animationend", function() {
       if (!isLogoAnimationCompleted) {
