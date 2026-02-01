@@ -5260,11 +5260,6 @@ function preloader() {
         htmlDocument.setAttribute("intro-hide", "");
         htmlDocument.removeAttribute("data-fls-scrolllock");
       }, 700);
-    } else {
-      console.log("Очікуємо:", {
-        isLogoAnimationCompleted,
-        areImagesLoaded
-      });
     }
   }
 }
